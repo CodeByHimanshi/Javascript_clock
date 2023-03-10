@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container fisrt-box">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="read-more-box">
+                    <h3>JavaScript Events</h3>
+                    <p id="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis maxime labore commodi
+                        eligendi
+                        culpa doloribus libero molestiae error dolor fugit quae asperiores sit nemo voluptatum totam,
+                        harum quo repellendus corporis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                        maxime labore commodi eligendi
+                        culpa doloribus libero molestiae error dolor fugit quae asperiores sit nemo voluptatum totam,
+                        harum quo repellendus corporis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                        maxime labore commodi eligendi
+                        culpa doloribus libero molestiae error dolor fugit quae asperiores sit nemo voluptatum totam,
+                        harum quo repellendus corporis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                        maxime labore commodi eligendi
+                        culpa doloribus libero molestiae error dolor fugit quae asperiores sit nemo voluptatum totam,
+                        harum quo repellendus corporis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                        maxime labore commodi eligendi
+                        culpa doloribus libero molestiae error dolor fugit quae asperiores sit nemo voluptatum totam,
+                        harum quo repellendus corporis!Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                        maxime labore commodi eligendi
+                        culpa doloribus libero molestiae error dolor fugit quae asperiores sit nemo voluptatum totam,
+                        harum quo repellendus corporis!</p>
+
+                    <button type="button" class="btn-read" id="read-btn" onclick="readToggle()">Read More</button>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Loops -->
+
+    <script>
+        // program to display the sum of n natural numbers
+        let sum = 0;
+        const n = 5;
+
+        // looping from i = n to 1
+        // in each iteration, i is decreased by 1
+        for (let i = n; i >= 1; i--) {
+            // adding i to sum in each iteration
+            sum += i; // sum = sum + i
+        }
+
+        console.log('sum:', sum);
+
+        // i=5, i=5, 0+5=5
+        // i=5, i=4, 5+4=9
+        // i=4, i=3, 9+3=12
+        // i=3, i=2, 12+2=14
+        // i=2, i=1, 14+1=15   
+
+        const numbers = [1, 2, 3, 4, 5];
+        numbers.forEach(number => console.log(number));
+        
+        numbers.forEach((number, index) => {
+            console.log('Index: ' + index + ' Value: ' + number);
+        });
+
+    </script>
+
+
+    <!-- Read More/Less -->
+
+    <script>
+        function readToggle() {
+            let pera = document.getElementById("pera");
+            let btnText = document.getElementById("read-btn");
+            if (pera.style.display != 'none') {
+                pera.style.display = 'none';
+                btnText.innerHTML = 'Read More';
+                btnText.style.background = "rgb(1, 210, 29)";
+            }
+            else {
+                pera.style.display = 'block';
+                btnText.innerHTML = 'Read Less';
+                btnText.style.background = "red";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+.fisrt-box {
+    margin-top: 50px;
+}
+
+.read-more-box {
+    background-color: rgb(243, 243, 243);
+    padding: 50px;
+}
+
+.read-more-box p {
+    margin-top: 30px;
+    transition: 0.3s;
+    display: none;
+}
+
+.btn-read {
+    padding: 10px 15px;
+    border: none;
+    background-color: rgb(1, 210, 29);
+    color: #fff;
+    border-radius: 3px;
+}
+
+
+/* =======================
+---------Calculator-------
+========================== */
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+.bg-box {
+    background: url(../images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+}
+
+.m0-auto {
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.colculator-box {
+    padding: 20px;
+    background: rgb(255 255 255 / 54%);
+    backdrop-filter: blur(3px);
+    border-radius: 30px;
+    box-shadow: -8px -8px  47px 0 rgb(255 255 255 / 30%), rgb(0 0 0) 10px 12px 18px;
+}
+
+.typing-area {
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 0 10px;
+    font-weight: 600;
+    color: #555;
+    font-size: 20px;
+    width: 100%;
+    height: 65px;
+    text-align: right;
+    margin-bottom: 25px;
+    background: none;
+}
+
+::selection {
+    background: transparent;
+}
+
+.colculator-box {
+    position: relative;
+    display: grid ;
+}
+form{
+    display: grid !important;
+}
+.colculator-box .typing-area {
+    grid-column: span 4;
+    font-size: 35px;
+    color: #363636;
+}
+.colculator-box  span {
+    position: relative;
+    display: grid;
+    width: 65px;
+    height: 65px;
+    background: linear-gradient(318deg, #efefef, #e0e0e0);
+    box-shadow: inset -8px 0 8px rgb(0 0 0 / 15%), inset 0 -8px 8px rgb(0 0 0 / 25%), 0 0 0 1px rgb(207 207 207 / 75%), rgb(0 0 0 / 25%) 4px 13px 18px;
+    margin: 10px;
+    border-radius: 30px;
+    user-select: none;
+    cursor: pointer;
+    font-size: 20px;
+    place-items: center;
+}
+span.num.cl-org {
+    background: linear-gradient(45deg, #F5B74D, #F59F46);
+    box-shadow: rgb(0 0 0 / 15%) -8px 0px 8px inset, rgb(0 0 0 / 25%) 0px -8px 8px inset, rgb(193 124 32) 0px 0px 0px 1px, rgb(0 0 0 / 25%) 4px 13px 18px;
+}
+span.num.cl-org::before {
+    background: linear-gradient(45deg, #F5B74D, #c37a2c);
+    box-shadow: -5px -5px 15px rgb(221 154 61 / 48%), 10px 5px 10px rgb(0 0 0 / 15%);
+    border-left: 1px solid #e49e40;
+    border-bottom: 1px solid #e49e40;
+    border-top: 1px solid #e49e40;
+}
+span.num.cl-org i{
+    position: relative;
+    font-style: normal;
+    font-size: 1.5;
+    color: #fff;
+}
+.colculator-box  span:before {
+    content: '';
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    top: 4px;
+    left: 4px;
+    bottom: 14px;
+    right: 12px;
+    background: linear-gradient(318deg, rgb(238 238 238), #c3c3c3);
+    border-radius: 25px;
+    z-index: 0;
+    box-shadow: -5px -5px 15px rgb(183 183 183 / 80%), 10px 5px 10px rgb(0 0 0 / 15%);
+    border-left: 1px solid #a0a0a044;
+    border-bottom: 1px solid #a0a0a044;
+    border-top: 1px solid #a0a0a044;
+}
+.colculator-box  span:active{
+    filter: brightness(1.5);
+}
+.colculator-box  span i{
+    position: relative;
+    font-style: normal;
+    font-size: 1.5;
+    color: #444;
+}
+.wid-42{
+    width: 420px;
+}
+.colculator-box .equal{
+    grid-row: span 2;
+    height: 90%;
+}
+.colculator-box .equal:before{
+    grid-row: span 2;
+    height: 90%;
+}
